@@ -11,7 +11,7 @@
             for (int i = 0; i < adatok.Length; i++)
             {
                 string[] tmpString = adatok[i].Split(':');
-                phones[i] = new Phone(int.Parse(tmpString[0]), tmpString[1], tmpString[2].Split(';'));
+                phones[i] = new Phone(tmpString[0], tmpString[1], tmpString[2].Split(';'));
             }
         }
 

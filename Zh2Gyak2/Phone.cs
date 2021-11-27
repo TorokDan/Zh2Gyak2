@@ -3,12 +3,12 @@
     enum FaultCause { OS, AC, OK }
     class Phone 
     {
-        public int ID { get; }
+        public string ID { get; }
         public string Type { get; }
         public int[] BatteryLevels { get; }
         public FaultCause FC { get; set; }
 
-        public Phone(int id, string type, string[] batterLevels)
+        public Phone(string id, string type, string[] batterLevels)
         {
             ID = id;
             Type = type;
